@@ -11,13 +11,12 @@
 <body>
     <script>
         let R = parseFloat(prompt("Nhập vào bán kính hình tròn"));
-        const r = 3.14;
         // công thức
-        C = Math.round(2 * R * r);
-        S = Math.round(R*R*r);
-        document.write("Chu vi hình tròn C =" + C); 
-        document.write("<br>")
-        document.write("Diện tích hình tròn S =" + S)
+        C = R * 2 * Math.PI;
+        S = Math.pow(R, 2) * Math.PI;
+        // hiển thị
+        document.write("Chu Vi: " + C.toFixed(1)+"<br/>");
+        document.write("Diện tích: " + S.toFixed(1));
     </script>
 </body>
 
